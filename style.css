@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Lora', serif;
+    background-color: #e5e7eb;
+    margin-top: 5.5em;
+}
+
+#title {
+    width: 100%;
+    background-color: rgb(19 23 37);
+    color: white;
+    height: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0px;
+}
+
+#title svg {
+    position: relative;
+    top: 12px;
+}
+
+#show-example {
+    display: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(19 79 230);
+    font-weight: 600;   
+}
+#example-display {
+    border: 3px solid black;
+    border-radius: 25px;
+    max-height: 20vh;
+    overflow: hidden;
+    width: 100%;
+    line-height: 0px;
+    transition: 0.75s;
+}
+#example-display.show {
+    line-height: 100%;
+}
+
+#options {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: space-between;
+}
+
+#options button {
+    width: 25vw; 
+    height: 15vh;
+    margin-top: 5%;
+    background-color: white;
+    transition: 0.75s;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+    color: rgb(19 79 230);
+    font-weight: 700;
+    font-size: 170%;
+}
+#options button:hover {
+    box-shadow: 0px 0px 24px 5px rgba(0,0,0,0.35);
+}
+
+#definition-display {
+    max-height: 40vh;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.correct {
+    background-color: lightgreen !important;
+}
+.incorrect {
+    background-color: red !important;
+}
